@@ -1,0 +1,18 @@
+#parent-container {
+    position: absolute; 
+    top: calc(12vh + 10px); 
+    bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#options-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#chart-container {
+    position: relative;
+    height: calc(100% - 55px); 
+}

@@ -1,0 +1,10 @@
+<div id="parent-container" class="container">
+  <div id="options-container">
+    <app-mqtt-listener (temp_data_received)="checkNewData($event)" style="margin-right: 50px;"></app-mqtt-listener>
+    <app-graph-settings (settingsChange)="onSettingsChange($event)" [timeOffset]="timeOffset" [selectedUnit]="chartTimeUnit"></app-graph-settings>
+  </div>
+
+  <div id="chart-container">
+    <canvas #graph></canvas>
+  </div>
+</div>

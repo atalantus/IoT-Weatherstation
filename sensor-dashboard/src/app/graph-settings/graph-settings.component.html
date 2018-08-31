@@ -1,0 +1,9 @@
+<div id="settings">
+  <h4 class="setting-label">Time offset:</h4>
+  <input (input)="onTimeOffsetChange($event.target.value)" style="width: 50px;" class="setting-container" type="number" min="1" max="999" value={{timeOffset}}>
+
+  <h4 class="setting-label">Time unit:</h4>
+  <select class="setting-container" (change)="onTimeUnitChange($event.target.value)">
+    <option *ngFor="let unit of timeUnits" [value]="unit" [selected]="unit === selectedUnit">{{unit}}</option>
+  </select>
+</div>

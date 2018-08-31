@@ -1,0 +1,13 @@
+<div id="connection-status" [class.connected]="connection === 'connected'" (click)="connect()">
+  <div *ngIf="connection === 'connected'">
+      <div id="connection-status-txt">Connected</div>
+  </div>
+  <div *ngIf="connection === 'not_connected'">
+      <div id="connection-status-txt">Not connected</div>
+      <div id="connection-status-desc">(Click to retry)</div>
+  </div>
+  <div *ngIf="connection === 'connecting'">
+      <div id="connection-status-txt">Not connected</div>
+      <div id="connection-status-desc">connecting...</div>
+  </div>
+</div>

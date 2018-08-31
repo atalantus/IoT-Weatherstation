@@ -1,0 +1,27 @@
+#connection-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#connection-status.connected {
+    background-color: green;
+    cursor: default;
+}
+
+#connection-status-txt {
+    text-transform: uppercase;
+}
+
+#connection-status-desc {
+    font-size: 12px;
+    text-transform: lowercase;
+}
