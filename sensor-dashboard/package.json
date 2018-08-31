@@ -1,6 +1,11 @@
 {
   "name": "sensor-dashboard",
-  "version": "0.0.0",
+  "author": {
+    "name": "Jonas Fritsch",
+    "email": "contact@atalantus.de",
+    "url": "https://www.atalantus.de"
+  },
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
